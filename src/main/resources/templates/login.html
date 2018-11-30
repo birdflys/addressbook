@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="../static/css/font.css">
+        <link rel="stylesheet" href="../static/css/xadmin.css">
+        <script src="../static/layui/layui.js" charset="utf-8"></script>
+        <script type="text/javascript" src="../static/js/xadmin.js"></script>
+
+        <meta charset="UTF-8"/>
+        <title>登陆页面</title>
+    </head>
+    <body class="login-bg">
+        <div class="login layui-anim layui-anim-up">
+            <div class="message">学生管理系统登录</div>
+            <div id="darkbannerwrap"></div>
+            <form class="layui-form" action="login" method="post">
+                用户名：<input type="text" name="name" placeholder="用户名"/><br/>
+                密&nbsp;&nbsp; 码：<input type="password" name="password" placeholder="密码"/><br/><br/><br/>
+                <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit" onclick="login"><br/><br/>
+                <button ><a href="toRegist" th:target="_blank">注册</a></button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<span style="font-size:14px;">
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <head>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="../static/css/font.css">
+        <link rel="stylesheet" href="../static/css/xadmin.css">
+        <script src="../static/layui/layui.js" charset="utf-8"></script>
+        <script type="text/javascript" src="../static/js/xadmin.js"></script>
+
+    <meta charset="UTF-8"/>
+    <title>注册页面</title>
+</head>
+    <style type="text/css">
+        body {
+            margin: 0;
+            background-color: gray;
+        }
+    </style>
+        <body class="login-bg">
+            <div class="login layui-anim layui-anim-up">
+                <div class="message">学生管理系统注册页面</div>
+                <div id="darkbannerwrap"></div>
+                <form class="form"  action="regist"  method="post">
+                    用户名：&nbsp;&nbsp; <input type="text" name="name" placeholder="用户名" /><br />
+                    密码：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" name="password" placeholder="密码" /><br />
+                    年龄：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="age" placeholder="年龄" /><br />
+                    性别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="sex" placeholder="性别" /><br />
+                    邮箱：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="sex" placeholder="邮箱" /><br />
+                    工作单位:&nbsp; <input type="text" name="sex" placeholder="工作单位" /><br />
+                    电话号码:&nbsp; <input type="text" name="sex" placeholder="电话号码" /><br /><br /><br />
+                    <input value="注册" lay-submit lay-filter="regist" style="width:100%;" type="submit" onclick="regist"><br/><br/>
+                </form>
+            </div>
+        </body>
+</html>
+</span>
